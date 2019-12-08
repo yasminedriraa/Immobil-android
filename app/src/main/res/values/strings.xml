@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ProjetImmo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="emptyfield">Champ vide!!</string>
+    <string name="forget_password">Forget password</string>
+    <string-array name="ville">
+        <item>Ariana</item>
+        <item>Beja</item>
+        <item>Ben arous</item>
+        <item>Bizerte</item>
+        <item>Gabes</item>
+        <item>Gafsa</item>
+        <item>Jendouba</item>
+        <item>kairouan</item>
+        <item>kasserine</item>
+        <item>Kebili</item>
+        <item>La manouba</item>
+        <item>Le kef</item>
+        <item>Mehdia</item>
+        <item>Medenine</item>
+        <item>Monastir</item>
+        <item>Nabeul</item>
+        <item>Sfax</item>
+        <item>Sidi bouzid</item>
+        <item>Siliana</item>
+        <item>Sousse</item>
+        <item>Tataouine</item>
+        <item>Tozeur</item>
+        <item>Tunis</item>
+        <item>Zaghouan</item>
+    </string-array>
+    <string-array name="tunisie">
+        <item>Tunisie</item>
+    </string-array>
+
+</resources>

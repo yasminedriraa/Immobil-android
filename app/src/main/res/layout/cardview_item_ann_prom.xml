@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewid"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:layout_marginLeft="140dp"
+                android:tint="#ffffff"
+                android:elevation="1dp"
+                android:src="@drawable/delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <ImageView
+                android:layout_marginLeft="110dp"
+                android:tint="#ffffff"
+                android:elevation="1dp"
+                android:src="@drawable/check"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imagebien"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:background="@color/colorPrimaryDark"/>
+            </LinearLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="18dp">
+            <TextView
+                android:text="nom de l'annonce"
+                android:id="@+id/nomannonce"
+                android:textColor="#c72e45"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="19dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="18dp">
+            <TextView
+                android:id="@+id/localisation"
+                android:textColor="#218380"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:text="localisation"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="prevu le"
+                android:textSize="14sp"/>
+            <TextView
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="Prix"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/date"
+                android:gravity="center"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="date"
+                android:textSize="14sp"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/prix"
+                android:layout_marginLeft="10dp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="200000dt"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

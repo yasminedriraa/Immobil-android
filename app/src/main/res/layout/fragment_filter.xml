@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FilterFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f2e9e1"
+        tools:context=".FilterActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Filtrez votre recherche"
+                    android:textAlignment="center"
+                    android:textColor="#090707"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="#30A9DE"
+                        android:src="@drawable/categorie"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Catégorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio1"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Villa"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio2"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Appartement"/>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio3"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Maison"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio4"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Terrain"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio5"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Commerce"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/radio6"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Burreau"/>
+                    </LinearLayout>
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="#30A9DE"
+                        android:src="@drawable/ic_services"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Atouts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r1"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Camera"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r2"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Espace vert"/>
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r3"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Climatisation"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r4"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Chauffage"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r5"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ascenseur"/>
+                        <RadioButton
+                            android:checked="false"
+                            android:id="@+id/r6"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Parking"/>
+                    </LinearLayout>
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="#30A9DE"
+                        android:src="@drawable/prix"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="0"
+                        android:textColor="#ef5285"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="180dp"
+                        android:text="200000"
+                        android:textColor="#ef5285"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:layout_gravity="center"
+                    android:id="@+id/rangeseekbar"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="#30A9DE"
+                        android:src="@drawable/surface"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Surface"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/minsurface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="0"
+                        android:textColor="#ef5285"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/maxsurface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="220dp"
+                        android:text="300"
+                        android:textColor="#ef5285"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:layout_gravity="center"
+                    android:id="@+id/rangeseekbarsurface"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:tint="#30A9DE"
+                        android:src="@drawable/adresse"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="Gouvernorat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <Spinner
+                        android:id="@+id/spin"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </Spinner>
+
+                </LinearLayout>
+                <Button
+                    android:background="@drawable/button_modif"
+                    android:id="@+id/rechercher"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="rechercher"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
